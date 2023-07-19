@@ -4,6 +4,7 @@
     --success-color: #2ecc2e;
     --error-color: #e74c3c;
     --color-btn: #3498db;
+    --color-btn-dark: #257cb5;
 }
 * {
     box-sizing: border-box;
@@ -48,7 +49,7 @@ h2 {
 }
 .form-control {
     position: relative;
-    margin-bottom: 1rem;
+    margin-bottom: .8rem;
     padding-bottom: 1rem;
 }
 .form-control > label {
@@ -96,4 +97,34 @@ h2 {
     margin-top: 2rem;
     width: 100%;
     font-size: 1rem;
+    transition: .5s ease;
+}
+
+.form button:hover {
+    background: var(--color-btn-dark);
+}
+
+@media(max-width: 600px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+        min-height: 90vh;
+        margin: 0 auto;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .container {
+        box-shadow: 0 0 0;
+    }
+    .title .line {
+        height: 3px;
+    }
+    .form-control {
+        position: relative;
+        margin-bottom: .5rem;
+        padding-bottom: 1.2rem;
+    }
+
 }
