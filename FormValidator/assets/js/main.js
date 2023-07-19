@@ -3,7 +3,8 @@ const username = document.getElementById('Username');
 const email = document.getElementById('Email');
 const password = document.getElementById('Password');
 const passwordAgain = document.getElementById('PasswordConfirmation');
-
+const eye1 = document.querySelector('.eye1');
+const eye2 = document.querySelector('.eye2');
 
 function showError(input, message) {
     const formControl = input.parentElement;
@@ -56,6 +57,30 @@ function checkEmail(input) {
         showError(input, `${input.id} is not valid`);
     }
 }
+
+function changeInputType1() {
+    const input = document.getElementById('Password');
+    if (input.type === 'text') {
+      input.type = 'password';
+      eye1.innerHTML = `<i class="fa-regular fa-eye"></i>`;
+    } else {
+        input.type = 'text';
+        eye1.innerHTML = `<i class="fa-regular fa-eye-slash"></i>`;
+    }
+  }
+
+
+function changeInputType2() {
+    const input = document.getElementById('PasswordConfirmation');
+    if (input.type === 'text') {
+      input.type = 'password';
+      eye2.innerHTML = `<i class="fa-regular fa-eye"></i>`;
+    } else {
+        input.type = 'text';
+        eye2.innerHTML = `<i class="fa-regular fa-eye-slash"></i>`;
+    }
+  }
+  
 
 
 form.addEventListener('submit', (e) => {

@@ -86,7 +86,7 @@ h2 {
 .form-control.error > small {
     visibility: visible;
 }
-.form button {
+.form .btn {
     cursor: pointer;
     background: var(--color-btn);
     border: 2px solid var(--color-btn);
@@ -101,9 +101,18 @@ h2 {
     transition: .5s ease;
 }
 
-.form button:hover {
+.form .btn:hover {
     background: var(--color-btn-dark);
 }
+
+.form .eye {
+    position: absolute;
+    right: 10px;
+    top: 40px;
+    border: 0;
+    cursor: pointer;
+}
+
 
 @media(max-width: 600px) {
 
@@ -112,6 +121,7 @@ h2 {
         justify-content: center;
         min-height: 90vh;
         margin: 0 auto;
+        background: #fff;
     }
     h2 {
         font-size: 2rem;
