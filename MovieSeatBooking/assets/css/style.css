@@ -24,7 +24,7 @@ body {
     margin: 3px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .seat:hover {
