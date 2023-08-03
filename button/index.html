@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;1,500&display=swap');
+
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: #112d48;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    p {
+        font-size: 1.4rem;
+        font-weight: 100;
+    }
+
+    .container {
+        min-width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .box {
+        background: #fff;
+        color: #000;
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .box::before {
+        position: absolute;
+        content: '';
+        width: 150px;
+        height: 150px;
+        background: #ffffff4b;
+        border-radius: 100%;
+        opacity: 0;
+        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    }
+    
+    .box:hover::before {
+        transform: scale(1.6);
+        opacity: 1;
+    }
+   
+</style>
+<body>
+<div class="container">
+    <div class="box">
+        <p>Explorer</p>
+    </div>
+</div>
+</body>
+</html>
