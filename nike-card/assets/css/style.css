@@ -41,8 +41,7 @@ html {
     position: relative;
     border-radius: 2rem 2rem 0 0;
     padding: 4rem 2rem;
-    /* background: rgb(0, 102, 255); */
-    background: rgb(255, 0, 55);
+    background: rgb(0, 102, 255);
 }
 
 .card-top-text {
@@ -76,13 +75,24 @@ html {
     width: 30rem;
     right: -10rem;
     top: -2rem;
-    visibility: hidden;
+}
+
+.container.change .shoe-1 {
+    transform: translateX(-60rem) rotate(45deg);
+} 
+.container.change .shoe-2 {
+    transform: translateX(-33rem) rotate(-40deg);
+
+} 
+
+.container.change .card-top {
+    background: rgb(255, 0, 55);
 }
 
 .shoe-2 {
     transform: rotate(-41deg);
     width: 33rem;
-    right: -7rem;
+    right: -45rem;
     top: -9rem;
 }
 
@@ -157,31 +167,29 @@ html {
     border-radius: 100%;
     width: 2rem;
     height: 2rem;
+    background: rgb(0, 102, 255);
+    cursor: pointer;
 }
 .color-2 {
     border-radius: 100%;
     width: 2rem;
     height: 2rem;
     margin-left: 3.2rem;
+    background: rgb(255, 0, 55);
 }
 
-.color-1 {
-    background: rgb(0, 102, 255);
-}
-
-.color-2 {
+.container.change .price {
     background: rgb(255, 0, 55);
 }
 
 .price {
     position: absolute;
     border-radius: 1rem;
-    /* background: rgb(0, 102, 255); */
-    background: rgb(255, 0, 55);
+    background: rgb(0, 102, 255);
     color: #fff;
     font-size: 2rem;
     padding: .8rem 2rem;
-    top: 61rem;
+    top: 62rem;
     right: 525px;
 }
 
