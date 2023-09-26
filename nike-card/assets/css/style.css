@@ -12,7 +12,7 @@ html {
 }
 
 .container {
-    background: #262626;
+    background: #333;
     width: 100%;
     height: 100vh;
     display: grid;
@@ -35,13 +35,14 @@ html {
     border-radius: 2rem;
     box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.7);
     background: #fff;
+    position: relative;
 }
 
 .card-top {
-    position: relative;
     border-radius: 2rem 2rem 0 0;
     padding: 4rem 2rem;
     background: rgb(0, 102, 255);
+    transition: background .5s;
 }
 
 .card-top-text {
@@ -69,6 +70,7 @@ html {
 
 .shoe-1, .shoe-2 {
     position: absolute;
+    transition: .5s;
 }
 
 .shoe-1 {
@@ -76,12 +78,18 @@ html {
     right: -10rem;
     top: -2rem;
 }
+.shoe-2 {
+    transform: rotate(-41deg);
+    width: 33rem;
+    right: -45rem;
+    top: -8.5rem;
+}
 
 .container.change .shoe-1 {
     transform: translateX(-60rem) rotate(45deg);
 } 
 .container.change .shoe-2 {
-    transform: translateX(-33rem) rotate(-40deg);
+    transform: translateX(-38rem) rotate(-40deg);
 
 } 
 
@@ -89,12 +97,6 @@ html {
     background: rgb(255, 0, 55);
 }
 
-.shoe-2 {
-    transform: rotate(-41deg);
-    width: 33rem;
-    right: -45rem;
-    top: -9rem;
-}
 
 .card-bottom {
     background: #fff;
@@ -161,38 +163,50 @@ html {
 
 .colors {
     margin: 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.color-1, .color-2 {
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
 }
 
 .color-1 {
-    border-radius: 100%;
-    width: 2rem;
-    height: 2rem;
-    background: rgb(0, 102, 255);
-    cursor: pointer;
-}
-.color-2 {
-    border-radius: 100%;
-    width: 2rem;
-    height: 2rem;
-    margin-left: 3.2rem;
-    background: rgb(255, 0, 55);
+    background: #1c477a;
+    box-shadow: 0 1rem 2rem rgba(28, 71, 122, 0.5);
 }
 
-.container.change .price {
-    background: rgb(255, 0, 55);
+.color-2 {
+    margin-left: 1.5rem;
+    background: #c02244;
+    box-shadow: 0 1rem 2rem rgba(192, 34, 68, 0.3);
 }
 
 .price {
-    position: absolute;
-    border-radius: 1rem;
-    background: rgb(0, 102, 255);
-    color: #fff;
+    width: 15rem;
+    height: 5rem;
     font-size: 2rem;
-    padding: .8rem 2rem;
-    top: 62rem;
-    right: 525px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    background: #1c477a;
+    box-shadow: 0 1rem 2rem rgba(28, 71, 122, 0.5);
+    color: #fff;
+    position: absolute;
+    right: -1rem;
+    transition: background .5s;
+}
+
+.container.change .price {
+    background: #c02244;
+    box-shadow: 0 1rem 2rem rgba(192, 34, 68, 0.3);
 }
 
 .price span:nth-child(2) {
     font-weight: 900;
-}
+    margin-left: 1rem;
+} 
