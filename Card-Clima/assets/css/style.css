@@ -1,0 +1,147 @@
+:root {
+    --color-light: #fff;
+    --color-black: #333;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: #333; */
+    background: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.light {
+    background: #fff;
+}
+.dark  {
+    background: #333;
+}
+
+.umid-blue {
+    background: #74ccff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.vent-yellow {
+    background: #fdc11c;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.toggle {
+    border: none;
+    font-size: 1.2rem;
+    background: #555;
+    color: #fff;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: .4rem .7rem; */
+    border-radius: .8rem;
+    cursor: pointer;
+}
+
+.moon {
+    color: rgb(94, 180, 236);
+}
+
+.sun {
+    color: #fdc11c;
+}
+
+.main-container {
+    width: 260px;
+    margin: 0 auto;
+    border-radius: .6rem;
+    background: var(--color-light);
+    color: var(--color-black);
+    transition: all .4s;
+}
+
+.main-container.dark {
+    background: #333;
+    color: #fff;
+  
+}
+
+.container {
+    margin: 1rem;  
+}
+
+.container .menu-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-style: italic;
+}
+
+.cidade {
+    font-weight: 500;
+}
+
+.container .temp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    transition: all .5s;
+}
+
+.main-container.dark .temp > .temp-i {
+    background: linear-gradient(160deg, #fdc11c 0, #fdc11c 25%, #ffbb00 50%, #f9cd53 75%, #f9cd53  100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-container .temp > .temp-i {
+    font-size: 4rem;
+    background: linear-gradient(160deg, #74ccff 0, #74ccff 25%, #74ccff  50%, #84c8f0  75%, #b3e2fd 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.temp p span.grau-number {    
+    font-size: 2rem;
+}
+
+.temp p span.grau {
+    position: absolute;
+    margin-left: .3rem;
+}
+
+.temp .legenda {
+    font-size: .7rem;
+    padding: .4rem;
+    border-radius: .4rem;
+    font-style: italic;
+    background: var(--color-black);
+    color: var(--color-light);
+}
+
+.main-container.dark .temp .legenda {
+    background: #fff;
+    color: #333;
+}
+
+.container .desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .desc .umid, .container .desc .vel-vent {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.umid p, .vel-vent p{
+    margin: .5rem;
+}
