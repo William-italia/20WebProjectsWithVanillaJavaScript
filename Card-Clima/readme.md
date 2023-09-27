@@ -1,4 +1,3 @@
-Climate - card
+Card Clima
 
-![Image website - climate card](./assets/img/cloudB.png)
-![Image website - climate card](./assets/img/cloudY.png)
+![Image website - card clima](./assets/img/opera_CnWjWZAkta.gif)
