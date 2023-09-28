@@ -27,9 +27,13 @@ html {
 
 .toggle {
   position: absolute;
-  right: 40rem;
-  top: 25rem;
-  padding: 2rem;
+  right: 20rem;
+  top: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+  width: 10rem;
   border-radius: 100%;
   background: #333;
   cursor: pointer;
@@ -42,8 +46,8 @@ html {
    display: flex;
    align-items: center;
   color: #333;
-  height: 7rem;
-  width: 7rem;
+  /* height: 7rem; */
+  /* width: 7rem; */
 }
 
 .toggle > i.fa-sun {
