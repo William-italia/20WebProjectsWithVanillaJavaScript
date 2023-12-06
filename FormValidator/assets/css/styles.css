@@ -3,10 +3,8 @@
 :root {
     --success-color: #2ecc2e;
     --error-color: #e74c3c;
-    /* --color-btn: #3498db; */
-    --color-btn: #34db34;
-    /* --color-btn-dark: #257cb5; */
-    --color-btn-dark: #34db34;
+    --color-btn: #3498db;
+    --color-btn-dark: #257cb5;
 }
 * {
     box-sizing: border-box;
