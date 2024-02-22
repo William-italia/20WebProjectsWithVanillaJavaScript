@@ -185,7 +185,7 @@
   }
 
   .card:hover {
-    transform: rotateY(0deg) skewX(0deg) translateY(0rem);
+    transform: rotateY(0deg) skewX(0deg) translateY(-3rem);
     box-shadow: 2rem 2rem 2rem #000;
   }
 
