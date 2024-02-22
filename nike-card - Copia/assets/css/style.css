@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box;
+    font-family: Quicksand, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    background: #333;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.card-wrapper {
+    background: #333;
+    width: 70rem;
+    height: 70rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card {
+    height: 55rem;
+    width: 30rem;
+    border-radius: 2rem;
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.7);
+    background: #fff;
+    position: relative;
+}
+
+.card-top {
+    border-radius: 2rem 2rem 0 0;
+    padding: 4rem 2rem;
+    background: rgb(0, 102, 255);
+    transition: background .5s;
+}
+
+.card-top-text {
+    color: #fff;
+    margin-bottom: 4rem;
+}
+
+.card-top-text h1 {
+    text-transform: uppercase;
+    margin-bottom: 1.2rem;
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.card-top-text p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 6rem;
+}
+
+.logo {
+    width: 10rem;
+    margin-bottom: 2rem;
+}
+
+.shoe-1, .shoe-2, .shoe-3 {
+    position: absolute;
+    transition: .5s;
+}
+
+.shoe-1 {
+    width: 30rem;
+    right: -10rem;
+    top: -2rem;
+}
+.shoe-2 {
+    transform: rotate(-41deg);
+    width: 33rem;
+    right: -45rem;
+    top: -8.5rem;
+}
+
+.shoe-3 {
+    transform: rotate(-41deg);
+    width: 33rem;
+    right: -45rem;
+    top: -8.5rem;
+}
+
+.container.change .shoe-1 {
+    transform: translateX(-60rem) rotate(45deg);
+} 
+.container.change .shoe-2 {
+    transform: translateX(-38rem) rotate(-40deg);
+
+}
+
+.container.change .shoe-3 {
+    transform: translateX(-38rem) rotate(-44deg);
+} 
+
+
+
+.container.change .card-top {
+    background: rgb(255, 0, 55);
+}
+
+
+.card-bottom {
+    background: #fff;
+    border-radius: 0 0 2rem 2rem;
+    padding: 3rem 3rem;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.card-bottom .title h1 {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-right: 2rem;
+}
+
+.badge {
+    background: rgb(58, 233, 145);
+    color: #fff;
+    text-transform: uppercase;
+    padding: .2rem .5rem;
+    border-radius: .5rem;
+    font-weight: 900;
+}
+
+.card-bottom h3 {
+    margin: .5rem 0;
+    color: rgb(110, 110, 110);
+    text-transform: uppercase;
+}
+
+.stars i:nth-child(5){
+    color: rgb(110, 110, 110);
+}
+
+.size {
+    margin: 3rem 0;
+    font-size: 1.4rem;
+}
+
+.sizes {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.sizes span {
+    margin-right: 2rem;
+}
+
+.size-check {
+    background: rgb(58, 233, 145);
+    color: #fff;
+    padding: .4rem .5rem;
+    border-radius: 100%;
+}
+
+.color h4 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.colors {
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.color-1, .color-2 {
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.color-1 {
+    background: #1c477a;
+    box-shadow: 0 1rem 2rem rgba(28, 71, 122, 0.5);
+}
+
+.color-2 {
+    margin-left: 1.5rem;
+    background: #c02244;
+    box-shadow: 0 1rem 2rem rgba(192, 34, 68, 0.3);
+}
+
+.price {
+    width: 15rem;
+    height: 5rem;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    background: #1c477a;
+    box-shadow: 0 1rem 2rem rgba(28, 71, 122, 0.5);
+    color: #fff;
+    position: absolute;
+    right: -1rem;
+    transition: background .5s;
+}
+
+.container.change .price {
+    background: #c02244;
+    box-shadow: 0 1rem 2rem rgba(192, 34, 68, 0.3);
+}
+
+.price span:nth-child(2) {
+    font-weight: 900;
+    margin-left: 1rem;
+} 
