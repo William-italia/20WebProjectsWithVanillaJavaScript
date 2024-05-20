@@ -1,0 +1,11 @@
+.btn {
+    padding: .8rem 1.5rem;
+    display: block;
+    cursor: pointer;
+    border: none;
+    border-radius: .2rem;
+}
+
+.span {
+    color: #009da8;
+}
